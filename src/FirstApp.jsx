@@ -18,7 +18,7 @@ export const FirstApp = ({title, subTitle, name}) => {
       <p>{subTitle}</p>
       <p>{subTitle}</p>
       <p>{name}</p>
-      <h1>{getMensajito(3, 4)}</h1>
+      {/* <h1>{getMensajito(3, 4)}</h1> */}
       {/* <code>{JSON.stringify(newMessage)}</code> */}
       <p>Spy un subtitulo</p>
     </Fragment>
