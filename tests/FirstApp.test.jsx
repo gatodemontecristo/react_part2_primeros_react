@@ -27,8 +27,8 @@ describe('Pruebas en <FirstApp/>', () => {
      test('debe de mostrar el subtitulo enviado por props', () => { 
         const title = 'Hola, Soy Goku'; 
         const subTitle = 2023;
-        const {getByText} = render(<FirstApp title={title} subTitle={subTitle}></FirstApp>);
-        expect(getByText(subTitle)).toBeTruthy();
+        const {getAllByText} = render(<FirstApp title={title} subTitle={subTitle}></FirstApp>);
+        expect(getAllByText(subTitle).length).toBe(2);
       })
 
  })
